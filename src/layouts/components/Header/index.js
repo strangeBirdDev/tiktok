@@ -12,6 +12,7 @@ import {
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 import classNames from "classnames/bind";
+import { useState } from "react";
 
 import styles from "./Header.module.scss";
 import images from "@/assets/images";
@@ -22,6 +23,7 @@ import Image from "@/components/Image";
 import Search from "../Search";
 import { Link } from "react-router-dom";
 import config from "@/config";
+import LoginModal from "../LoginModal";
 
 const cx = classNames.bind(styles);
 
@@ -59,7 +61,7 @@ const handleMenuChange = (item) => {
 };
 
 // Handle authorize
-const currentUser = true;
+const currentUser = false;
 
 const userMenu = [
     {
@@ -87,6 +89,12 @@ const userMenu = [
 ];
 
 function Header() {
+    const [openModal, setOpenModal] = useState(false);
+
+    const handleCloseModal = () => {
+        setOpenModal(false);
+    };
+
     return (
         <header className={cx("wrapper")}>
             <div className={cx("inner")}>
@@ -119,7 +127,9 @@ function Header() {
                     ) : (
                         <>
                             <Button text>Upload</Button>
-                            <Button primary>Log in</Button>
+                            <Button primary onClick={() => setOpenModal(true)}>
+                                Log in
+                            </Button>
                         </>
                     )}
                     <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
@@ -137,6 +147,7 @@ function Header() {
                     </Menu>
                 </div>
             </div>
+            {openModal ? <LoginModal onClose={handleCloseModal} /> : ""}
         </header>
     );
 }

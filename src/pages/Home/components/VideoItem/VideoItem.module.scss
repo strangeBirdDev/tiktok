@@ -1,0 +1,66 @@
+.wrapper {
+    display: flex;
+    align-items: flex-end;
+    padding: 20px 0;
+    max-width: 692px;
+}
+
+.account-info {
+    display: flex;
+    margin-right: 20px;
+}
+
+.avatar {
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.video-info {
+    width: 100%;
+    margin-left: 12px;
+    flex: 1;
+}
+
+.account-header {
+    width: 180%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.account-name {
+    display: flex;
+
+    .nickname {
+        display: inline-block;
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 2.7rem;
+        margin-right: 4px;
+    }
+
+    .name {
+        display: inline-block;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2.8rem;
+    }
+}
+
+.video-content {
+    width: 326px;
+    height: 583px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.action-sidebar {
+    text-align: center;
+}
+
+.interact-count {
+    font-size: 1.2rem;
+    font-weight: 700;
+}

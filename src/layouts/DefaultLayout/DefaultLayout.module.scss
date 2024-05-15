@@ -12,6 +12,10 @@
     display: flex;
 }
 
+.sidebar {
+    flex-shrink: 0;
+}
+
 .content {
     flex: 1;
 }

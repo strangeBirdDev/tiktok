@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import styles from "./Sidebar.module.scss";
 import classNames from "classnames/bind";
 
@@ -16,9 +17,9 @@ import SuggestedAccounts from "../SuggestedAccounts";
 
 const cx = classNames.bind(styles);
 
-function Sidebar() {
+function Sidebar({ className }) {
     return (
-        <aside className={cx("wrapper")}>
+        <aside className={cx("wrapper", className)}>
             <Menu>
                 <MenuItem
                     title="For You"
@@ -45,5 +46,9 @@ function Sidebar() {
         </aside>
     );
 }
+
+Sidebar.propTypes = {
+    className: PropTypes.string,
+};
 
 export default Sidebar;

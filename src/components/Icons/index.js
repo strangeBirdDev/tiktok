@@ -177,3 +177,113 @@ export const LiveRegularIcon = ({ width = "3.2rem", height = "3.2rem", className
         <path d="M15 15.134C15.6667 15.5189 15.6667 16.4811 15 16.866L12 18.5981C11.3333 18.983 10.5 18.5019 10.5 17.7321L10.5 14.2679C10.5 13.4981 11.3333 13.017 12 13.4019L15 15.134Z"></path>
     </svg>
 );
+
+export const HeartIcon = ({ width = "2.4rem", height = "2.4rem", className }) => (
+    <svg className={className} width={width} height={height}>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="heart-fill-52d919d9">
+            <g fillRule="evenodd" clipPath="url(#heart-fill-52d919d9_a)" clipRule="evenodd">
+                <path d="M7.5 2.25c3 0 4.5 2 4.5 2s1.5-2 4.5-2c3.5 0 6 2.75 6 6.25 0 4-3.269 7.566-6.25 10.25C14.41 20.407 13 21.5 12 21.5s-2.45-1.101-4.25-2.75C4.82 16.066 1.5 12.5 1.5 8.5c0-3.5 2.5-6.25 6-6.25"></path>
+                <path
+                    fill="black"
+                    fillOpacity=".03"
+                    d="M2.402 12.2c1.187 2.497 3.357 4.727 5.348 6.55C9.55 20.399 11 21.5 12 21.5s2.41-1.093 4.25-2.75c2.98-2.684 6.25-6.25 6.25-10.25q0-.13-.005-.26C20.567 13.661 13.68 18.5 11.75 18.5c-1.437 0-6.14-2.687-9.348-6.3"
+                ></path>
+            </g>
+            <defs>
+                <clipPath id="heart-fill-52d919d9_a">
+                    <path fill="white" d="M0 0h24v24H0z"></path>
+                </clipPath>
+            </defs>
+        </symbol>
+        <use xlinkHref="#heart-fill-52d919d9"></use>
+    </svg>
+);
+
+export const CommentIcon = ({ width = "2.4rem", height = "2.4rem", className }) => (
+    <svg className={className} width={width} height={height}>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="Bubble_Ellipsis_Right_Fill-7ce6d3b3">
+            <path
+                fillRule="evenodd"
+                d="M2 21.5c0-10.22 9.88-18 22-18s22 7.78 22 18c0 5.63-3.19 10.74-7.32 14.8a43.6 43.6 0 0 1-14.14 9.1A1.5 1.5 0 0 1 22.5 44v-5.04C11.13 38.4 2 31.34 2 21.5M14 25a3 3 0 1 0 0-6 3 3 0 0 0 0 6m10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6m13-3a3 3 0 1 1-6 0 3 3 0 0 1 6 0"
+                clipRule="evenodd"
+            ></path>
+        </symbol>
+        <use xlinkHref="#Bubble_Ellipsis_Right_Fill-7ce6d3b3"></use>
+    </svg>
+);
+
+export const CollectIcon = ({ width = "2.4rem", height = "2.4rem", className }) => (
+    <svg className={className} width={width} height={height}>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="uncollect-7652bb5c">
+            <path
+                fill="currentColor"
+                d="M4 4.5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v15.13a1 1 0 0 1-1.555.831l-6.167-4.12a.5.5 0 0 0-.556 0l-6.167 4.12A1 1 0 0 1 4 19.63z"
+            ></path>
+            <path
+                fill="currentColor"
+                fillOpacity=".03"
+                d="M4.032 4.144Q4 4.317 4 4.5v15.13a1 1 0 0 0 1.555.831l6.167-4.12a.5.5 0 0 1 .41-.066l-.427-.198a1.49 1.49 0 0 0-1.377.063c-.581.339-1.45.85-2.25 1.339-.59.359-1.427.695-2.187.962-.929.325-1.86-.387-1.86-1.37zm8.251 12.202 6.162 4.115A1 1 0 0 0 20 19.63V4.5a2 2 0 0 0-1.123-1.798c.21.254.334.58.33.936a117 117 0 0 1-.896 13.408c-.124.99-1.17 1.553-2.076 1.133z"
+            ></path>
+        </symbol>
+        <use xlinkHref="#uncollect-7652bb5c"></use>
+    </svg>
+);
+
+export const ShareIcon = ({ width = "2.4rem", height = "2.4rem", className }) => (
+    <svg className={className} width={width} height={height}>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="pc-share-078b3fae">
+            <path
+                fill="currentColor"
+                fillRule="evenodd"
+                d="M10.938 3.175a.674.674 0 0 1 1.138-.488l6.526 6.215c.574.547.554 1.47-.043 1.991l-6.505 5.676a.674.674 0 0 1-1.116-.508V13.49s-6.985-1.258-9.225 2.854c-.209.384-1.023.518-.857-1.395.692-3.52 2.106-9.017 10.082-9.017z"
+                clipRule="evenodd"
+            ></path>
+            <path
+                fill="#161823"
+                fillRule="evenodd"
+                d="m15.754 6.212 1.295 2.59a1.12 1.12 0 0 1-.268 1.349l-5.799 5.042s-.28 1.403.562 1.403 7.578-6.174 7.578-6.174.28-.842-.561-1.684c-.843-.842-2.807-2.526-2.807-2.526"
+                clipRule="evenodd"
+                opacity=".03"
+            ></path>
+            <path
+                fill="url(#pc-share-078b3fae_a)"
+                fillRule="evenodd"
+                d="M10.937 6.23v7.297s-6.683-.942-8.777 2.246C.146 18.839.331 12.309 3.363 9.057s7.574-2.827 7.574-2.827"
+                clipRule="evenodd"
+                opacity=".09"
+            ></path>
+            <defs>
+                <radialGradient
+                    id="pc-share-078b3fae_a"
+                    cx="0"
+                    cy="0"
+                    r="1"
+                    gradientTransform="rotate(-113.046 11.628 5.43)scale(8.93256 8.78076)"
+                    gradientUnits="userSpaceOnUse"
+                >
+                    <stop></stop>
+                    <stop offset=".995" stopOpacity=".01"></stop>
+                    <stop offset="1" stopOpacity=".01"></stop>
+                </radialGradient>
+            </defs>
+        </symbol>
+        <use xlinkHref="#pc-share-078b3fae"></use>
+    </svg>
+);
+
+export const CloseModalIcon = ({ width = "2.4rem", height = "2.4rem", className }) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        viewBox="0 0 48 48"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M21.1718 23.9999L10.2931 13.1212C9.90261 12.7307 9.90261 12.0975 10.2931 11.707L11.7074 10.2928C12.0979 9.90228 12.731 9.90228 13.1216 10.2928L24.0002 21.1715L34.8789 10.2928C35.2694 9.90228 35.9026 9.90228 36.2931 10.2928L37.7073 11.707C38.0979 12.0975 38.0979 12.7307 37.7073 13.1212L26.8287 23.9999L37.7073 34.8786C38.0979 35.2691 38.0979 35.9023 37.7073 36.2928L36.2931 37.707C35.9026 38.0975 35.2694 38.0975 34.8789 37.707L24.0002 26.8283L13.1216 37.707C12.731 38.0975 12.0979 38.0975 11.7074 37.707L10.2931 36.2928C9.90261 35.9023 9.90261 35.2691 10.2931 34.8786L21.1718 23.9999Z"
+        ></path>
+    </svg>
+);
